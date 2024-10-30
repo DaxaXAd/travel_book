@@ -1,0 +1,290 @@
+/* HAMI-Ludwig_20241029_travel-book_CSS */
+
+* {
+    margin: 0;
+}
+
+body {
+    /* margin: 0; */
+    font-family: "Open Sans", sans-serif;
+}
+
+/* hero image */
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/backpack-mountain.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    align-items: center;
+}
+
+.next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* end hero image */
+
+ul {
+    display: inline-block;
+    list-style: none;
+}
+
+
+
+h1 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2em;
+    color: var(--white);
+}
+
+h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.5em;
+}
+
+h2+p {
+    color: var(--white);
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 30%;
+}
+
+p {
+    color: var(--white);
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: var(--black);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#preparation {
+    background-color: var(--couleur-de-fond);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    padding-top: 40px;
+}
+
+.back_color {
+    color: var(--white);
+    background-color: var(--couleur-de-fond-etapes);
+}
+
+img {
+    max-width: 100%;
+}
+
+.destination img{
+    width: 40%;
+    height: auto;
+    margin: 0;
+}
+
+.destination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.destination p {
+    border-top: 1px solid var(--white);
+}
+
+.n_c {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+/* modify tag <p> in .n_c  */
+.n_c  p{
+    border-top: 2px solid var(--white);
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid var(--white);    
+}
+
+svg + h3{
+    display: inline-block;
+}
+
+
+.text_etape {
+    padding: 0 100px;
+}
+
+
+/* end section etape */
+
+/* svg */
+
+.svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 268px;
+
+}
+
+#svg_passport {
+    fill: var(--passeport);
+    width: 50px;
+    height: 70px;
+}
+
+#svg_route {
+    fill: var(--route);
+    width: 50px;
+    height: 70px;
+}
+
+#svg_panneaux {
+    fill: var(--panneaux);
+    width: 50px;
+    height: 70px;
+}
+
+#svg_arrow {
+    fill: var(--white);
+    width: 20px;
+    height: 20px;
+}
+
+#svg_arrow_up {
+    position: absolute;
+    left: 95%;
+    fill: grey;
+    height: 2.2em;
+    width: 2.2em;
+}
+
+
+
+.map_dot {
+    fill: var(--white);
+    height: 30px;
+    width: 50px;
+}
+
+/* end svg */
+
+/* footer */
+footer {
+    height: 100px;
+    font-size: 0.8em;
+    background-color: var(--couleur-de-fond);
+
+}
+
+footer+a {
+    color: var(--white);
+}
+
+#footer {
+    left: 0;
+    bottom: 0;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+
+}
+
+.a_footer {
+    color: var(--white);
+}
+
+p.Copyright {
+    font-size: 10px;
+    font-weight: 100;
+    border-top: 0.02em solid var(--white);
+    align-self: center;
+    background-color: var(--couleur-de-fond);
+    text-align: center;
+}
+
+.social_media {
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.social_media:hover {
+    fill: var(--social-media-hover);
+}
+
+/* end footer */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+
+    /* Section bienvenue */
+    --passeport: #03a696;
+    --route: #f2b705;
+    --panneaux: #c7d93d;
+    --couleur-de-fond: #0d4a80;
+
+    /* sections étapes */
+    --couleur-de-fond-etapes: #042645;
+
+    /* footer */
+    --social-media-hover: #c7d93d;
+}
