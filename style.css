@@ -1,7 +1,8 @@
-/* HAMI-Ludwig_20241029_travel-book_CSS */
+/* HAMI-Ludwig_20241030_travel-book_CSS */
 
 * {
     margin: 0;
+    /* remove margin */
 }
 
 body {
@@ -64,6 +65,7 @@ h3 {
 }
 
 h2+p {
+    /* to select the <p> who follow h2 */
     color: var(--white);
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
@@ -82,6 +84,7 @@ p {
 a {
     color: var(--white);
     text-decoration: none;
+    /* to hide underline for tag <a> */
 }
 
 nav {
@@ -101,6 +104,7 @@ nav a:hover {
 
 a:hover {
     cursor: pointer;
+    /* modify cursor to become a pointer while hovering <a> */
 }
 
 #preparation {
@@ -122,7 +126,7 @@ img {
     max-width: 100%;
 }
 
-.destination img{
+.destination img {
     width: 40%;
     height: auto;
     margin: 0;
@@ -146,14 +150,15 @@ img {
 }
 
 /* modify tag <p> in .n_c  */
-.n_c  p{
+.n_c p {
     border-top: 2px solid var(--white);
     display: flex;
     justify-content: flex-start;
-    border-top: 1px solid var(--white);    
+    border-top: 1px solid var(--white);
 }
 
-svg + h3{
+/* modify h3 following an svg */
+svg+h3 {
     display: inline-block;
 }
 
@@ -272,6 +277,7 @@ p.Copyright {
 
 /* end footer */
 
+/* var color by default */
 :root {
     --black: #000000;
     --white: #ffffff;
